@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    width: 100%;
+}
+
+nav {
+    background-color: hsl(217, 28%, 15%);
+    padding: 3rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tabs {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 28%;
+    color: white;
+}
+
+#tabs span:hover {
+    cursor: pointer;
+    font-size: larger;
+    transition: 300ms;
+}
+
+#tabs span::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    transition: 300ms;
+    background-color: white;
+}
+
+#tabs span:hover::after {
+    width: 100%;
+}
+
+#intro {
+    background-color: hsl(217, 28%, 15%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#intro img {
+    width: 40%;
+    margin: 2rem;
+}
+
+#introTitle {
+    line-height: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: absolute;
+}
+
+#introDesc {
+    width: 87%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    top: 6.5rem;
+}
+
+#introButton {
+    font-family: 'Raleway', 'Open Sans';
+    font-weight: 400;
+    color: white;
+    border: none;
+    padding: 1rem 4.5rem;
+    background: linear-gradient(to right top, hsl(176, 68%, 64%), hsl(198, 76%, 18%));
+    border-radius: 2rem;
+    font-size: 1rem;
+    top: 13rem;
+    position: absolute;
+}
+
+#introButton:hover {
+    cursor: pointer;
+    background: linear-gradient(to left bottom, hsl(176, 68%, 64%), hsl(198, 76%, 18%));
+}
+
+.gridHeading {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+#grid {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+
+#work {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin: 6rem;
+}
+
+#workText {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#workHeading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.workDesc {
+    font-family: 'Open Sans';
+}
+
+#work a {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(176, 68%, 64%);
+    width: max-content;
+    border-bottom: 1px solid #62E0D9;
+    text-decoration: none;
+}
+
+a svg {
+    background-color: #62E0D9;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+#work a:hover {
+    color: white;
+    border-bottom-color: white;
+}
+
+a svg:hover {
+    background-color: white;
+}
+
+#review {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 10rem 6rem 5rem;
+    padding-bottom: 35vh;
+
+}
+
+#review>img {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    z-index: -1;
+}
+
+.box {
+    font-family: 'Open Sans', sans-serif;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    padding: 2.5rem 2rem 0.6rem;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.box img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.boxText {
+    margin-bottom: 1.5rem;
+}
+
+.boxName {
+    display: flex;
+}
+
+.boxFullName {
+    margin-left: 1rem;
+    font-size: smaller;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    margin: 0;
+    padding-bottom: 3px;
+    font-size: small;
+    font-weight: 700;
+}
+
+#email {
+    margin: 0 auto;
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    width: 60%;
+    padding: 0 0 1rem;
+    position: relative;
+    bottom: 9rem;
+}
+
+.emailHeading {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 2rem 0 1rem;
+}
+
+.emailText {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 0 6rem 1rem;
+}
+
+.input {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.input input {
+    width: 65%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition: 500ms;
+    color: #62E0D9;
+}
+
+input:focus {
+    background-color: hsl(219, 23%, 29%);
+    outline: solid #62E0D9;
+}
+
+.input button {
+    width: 25%;
+    font-family: 'Raleway', 'Open Sans';
+    font-weight: 400;
+    color: white;
+    border: none;
+    background: linear-gradient(to right top, hsl(176, 68%, 64%), hsl(198, 76%, 18%));
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.input button:hover {
+    background: linear-gradient(to left bottom, hsl(176, 68%, 64%), hsl(198, 76%, 18%));
+}
+
+#footer,
+footer {
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    color: white;
+}
+
+.foot {
+    position: relative;
+    bottom: 5rem;
+}
+
+.foot>svg {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+#end {
+    display: flex;
+    padding: 0 5rem;
+    justify-content: space-between;
+}
+
+ul,
+#footerOne {
+    list-style-type: none;
+    color: rgb(184, 184, 184);
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+#end svg {
+    margin-right: 0.9rem;
+}
+
+li:hover,
+#footerOne:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#footerOne {
+    width: 30%;
+    display: flex;
+}
+
+#footerFive svg:hover {
+    color: #62E0D9;
+    border-color: #62E0D9;
+}
+
+#footerFive svg {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+@media (max-width:960px) {
+    nav {
+        padding: 1rem;
+        padding-left: 0.5;
+    }
+
+    #tabs {
+        font-size: 10px;
+        max-width: 40%;
+        justify-content: space-between;
+    }
+
+    #intro img {
+        width: 90%;
+    }
+
+    .introText {
+        width: 90%;
+        height: 5rem;
+    }
+
+    #introDesc {
+        top: 10rem;
+    }
+
+    #introButton {
+        top: 20rem;
+    }
+
+
+    #grid {
+        padding-top: 20rem;
+    }
+
+    #work {
+        flex-direction: column;
+        margin: 10rem 1rem 1rem;
+        align-items: center;
+    }
+
+
+    .workImg img {
+        max-width: 360px;
+    }
+
+    #workText {
+        margin: 3rem 0;
+        padding-bottom: 7vh;
+    }
+
+    #workHeading {
+        width: 90%;
+    }
+
+    #review {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20vh;
+        margin: 0 1rem;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 2rem;
+    }
+
+    #footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #email {
+        margin: 1rem;
+        width: 90%;
+    }
+
+    .emailHeading {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .emailText {
+        padding: 2rem;
+    }
+
+    .input {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .input input {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .input button {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .foot {
+        bottom: 2rem;
+    }
+
+    .foot>svg {
+        margin-left: 1.2rem;
+    }
+
+    #end {
+        flex-direction: column;
+        padding: 0 1.2rem;
+        align-items: left;
+    }
+
+    #end div {
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    #end #footerOne {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #footerFive {
+        align-self: center;
+    }
+}

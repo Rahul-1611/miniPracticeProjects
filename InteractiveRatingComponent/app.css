@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(216, 12%, 8%);
+}
+
+section {
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    max-width: 280px;
+    min-height: fit-content;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 100px auto;
+    background: hsl(213, 19%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+button {
+    display: block;
+    border: none;
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    padding: 10px;
+    margin: 26px 0 0;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.num {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(216, 12%, 54%);
+    width: 17px;
+    text-align: center;
+}
+
+.num:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+
+.select {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    width: 17px;
+    text-align: center;
+}
+
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thanks {
+    display: none;
+    text-align: center;
+}
+
+.thanks svg {
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.thanks h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.thanks p {
+    margin-top: 5px;
+}
+
+.rat {
+    color: hsl(25, 97%, 53%);
+    margin: 0 auto;
+    padding: 5px 20px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 23%);
+    font-size: 15px;
+}
